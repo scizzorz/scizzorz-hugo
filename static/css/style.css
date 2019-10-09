@@ -24,11 +24,11 @@
   --foreground: var(--base5);
   --codebg: var(--base1);
   --codefg: var(--base4);
-  --accent: var(--cyan);
+  --accent: var(--blue);
   --lowlight: var(--base3);
 
-  --nav: var(--teal);
-  --byline: var(--orange);
+  --nav: var(--indigo);
+  --byline: var(--indigo);
 
   --mask: var(--purple);
   --milk: var(--blue);
@@ -75,7 +75,6 @@ a {
 
 a:hover {
   color: var(--foreground);
-  text-decoration: underline;
 }
 
 ul {
@@ -126,8 +125,8 @@ nav a {
   margin-right: 1em;
 }
 
-nav a.root {
-  color: var(--accent);
+nav a:hover {
+  color: var(--foreground);
 }
 
 h1,
@@ -220,7 +219,6 @@ pre {
 }
 
 .byline a {
-  text-decoration: none;
   color: inherit;
 }
 

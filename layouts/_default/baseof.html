@@ -18,7 +18,7 @@
   <body>
     <header>
       <nav>
-        <a class="root" href="{{ .Site.BaseURL }}">#</a>
+        <a href="{{ .Site.BaseURL }}">#</a>
         {{ range .Site.Taxonomies.tags }}
         <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
         {{ end }}
