@@ -17,16 +17,12 @@
 
   <body>
     <header>
-      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-      {{ with .Site.Menus.main }}
       <nav>
-        <ul>
-          {{ range . }}
-          <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
+        <a class="root" href="{{ .Site.BaseURL }}">#</a>
+        {{ range .Site.Taxonomies.tags }}
+        <a href="{{ .Page.Permalink }}">#{{ .Page.Title }}</a>
+        {{ end }}
       </nav>
-      {{ end }}
     </header>
 
     {{ block "main" . }}{{ end }}

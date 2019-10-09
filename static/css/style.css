@@ -24,8 +24,11 @@
   --foreground: var(--base5);
   --codebg: var(--base1);
   --codefg: var(--base4);
-  --accent: var(--teal);
+  --accent: var(--cyan);
   --lowlight: var(--base3);
+
+  --nav: var(--teal);
+  --byline: var(--orange);
 
   --mask: var(--purple);
   --milk: var(--blue);
@@ -33,11 +36,6 @@
   --vx: var(--teal);
   --xcl: var(--pink);
   --xtfc: var(--orange);
-
-  --byline: var(--orange);
-  --h1: var(--accent);
-  --h2: var(--cyan);
-  --h3: var(--blue);
 
   --great: var(--green);
   --good: var(--lime);
@@ -121,6 +119,15 @@ ul.bad li::before {
 
 header {
   font-weight: bold;
+}
+
+nav a {
+  color: var(--nav);
+  margin-right: 1em;
+}
+
+nav a.root {
+  color: var(--accent);
 }
 
 h1,
